@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="Match_game_4216528.MainPage">
+
+    <ScrollView>
+
+        <!-- Creamos un VerticalStackLayout y definimos sus propiedades --> 
+        
+        <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
+
+            <!-- Insertamos nuestro gif y definimos sus propiedades -->
+
+            <Image Source="emoji.gif" IsAnimationPlaying="True" HeightRequest="100" HorizontalOptions="Center"/>
+
+            <!-- Creamos un label para mostrar el nombre del juego -->
+
+            <Label Text="Match Game 4216528" x:Name="lblPrincipal" FontSize="20" HorizontalOptions="Center"/>
+
+            <!-- Creamos un Timer para mostrar el el tiempo transcurrido -->
+
+            <Label x:Name="Timer" Text="0.000" HorizontalTextAlignment="Center"/>
+
+            <!-- Creamos un button para iniciar el temporizador -->
+
+            <Button x:Name="Inicio" Clicked="Inicio_Clicked" Text="Iniciar"/>
+
+            <!-- Creamos un button para reiniciar el temporizador -->
+
+            <Button x:Name="Reiniciar" Clicked="Reiniciar_Clicked" Text="Reiniciar temporizador"/>
+
+            <!-- Creamos un button para reiniciar el juego -->
+
+            <Button x:Name="ReiniciarJuego" Text="Reiniciar Juego" Clicked="ReiniciarJuego_Clicked"/>
+
+            <Grid x:Name="Grid1">
+
+                <!-- Creamos un Grid y definimos sus propiedades -->
+
+                <Grid.ColumnDefinitions>
+                    
+                    <ColumnDefinition/>
+                    
+                    <ColumnDefinition/>
+                    
+                    <ColumnDefinition/>
+                    
+                    <ColumnDefinition/>
+                    
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    
+                    <RowDefinition/>
+                    
+                    <RowDefinition/>
+                    
+                    <RowDefinition/>
+                    
+                    <RowDefinition/>
+                    
+                </Grid.RowDefinitions>
+
+                <Button Text="?" FontSize="36" Clicked="Button_Clicked"/>
+
+                <Button Text="?" FontSize="36" Grid.Column="1" Clicked="Button_Clicked"/>
+                
+                <Button Text="?" FontSize="36" Grid.Column="2" Clicked="Button_Clicked"/>
+                
+                <Button Text="?" FontSize="36" Grid.Column="3" Clicked="Button_Clicked"/>
+
+                <Button Text="?" FontSize="36" Grid.Row="1" Clicked="Button_Clicked"/>
+                
+                <Button Text="?" FontSize="36" Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked"/>
+                
+                <Button Text="?" FontSize="36" Grid.Row="1" Grid.Column="2" Clicked="Button_Clicked"/>
+                
+                <Button Text="?" FontSize="36" Grid.Row="1" Grid.Column="3" Clicked="Button_Clicked"/>
+
+                <Button Text="?" FontSize="36" Grid.Row="2" Clicked="Button_Clicked"/>
+
+                <Button Text="?" FontSize="36" Grid.Row="2" Grid.Column="1" Clicked="Button_Clicked"/>
+                
+                <Button Text="?" FontSize="36" Grid.Row="2" Grid.Column="2"  Clicked="Button_Clicked"/>
+                
+                <Button Text="?" FontSize="36" Grid.Row="2" Grid.Column="3"  Clicked="Button_Clicked"/>
+
+                <Button Text="?" FontSize="36" Grid.Row="3" Clicked="Button_Clicked"/>
+
+                <Button Text="?" FontSize="36" Grid.Row="3" Grid.Column="1"  Clicked="Button_Clicked"/>
+                
+                <Button Text="?" FontSize="36" Grid.Row="3" Grid.Column="2"  Clicked="Button_Clicked"/>
+                
+                <Button Text="?" FontSize="36" Grid.Row="3" Grid.Column="3"  Clicked="Button_Clicked"/>
+
+            </Grid>
+
+        </VerticalStackLayout>
+        
+    </ScrollView>
+
+</ContentPage>
